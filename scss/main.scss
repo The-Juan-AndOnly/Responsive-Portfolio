@@ -1,0 +1,14 @@
+$primary-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $primary-color;
+}
+
+h1 {
+  color: white;
+}
