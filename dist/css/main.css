@@ -133,7 +133,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-  color: #fff; }
+  color: #f1f1f1; }
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
