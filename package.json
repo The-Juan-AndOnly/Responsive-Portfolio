@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Portfolio",
   "main": "index.js",
+  "homepage": "https://The-Juan-AndOnly.github.io/Responsive-Portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
   }
 }
