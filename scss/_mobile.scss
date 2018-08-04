@@ -1,11 +1,21 @@
 //widescreens
 
 @include mediaXl {
+  #projects {
+    .projects-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
 }
 
 //Desktops and Laptop
 
 @include mediaLg {
+  #projects {
+    .projects-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 //Tablets and Small laptops
@@ -59,6 +69,12 @@
       justify-items: center;
     }
   }
+
+  #projects {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 //Smartphones
@@ -66,5 +82,10 @@
 @include mediaSm {
   main#home h1 {
     margin-top: 10vh;
+  }
+  #projects {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }

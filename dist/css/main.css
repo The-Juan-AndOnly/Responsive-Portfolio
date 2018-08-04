@@ -117,6 +117,10 @@
     background: #404040;
     padding: 0.5rem;
     border-bottom: #00f3f3 5px solid; }
+    #about .about-info .job h6 {
+      font-weight: 300;
+      font-size: 0.75rem;
+      color: #74ffff; }
 
 #main-footer {
   text-align: center;
@@ -124,6 +128,27 @@
   background: #1a1a1a;
   color: #f1f1f1;
   height: 60px; }
+
+#projects .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; }
+  #projects .projects-grid img {
+    max-width: 100%;
+    border: 3px solid #fff;
+    min-height: 100px; }
+    #projects .projects-grid img:hover {
+      opacity: 0.5;
+      border-color: #00f3f3;
+      transition: all 0.5s ease-out; }
+
+#projects .btn-dark {
+  background: black;
+  color: #fff; }
+
+#projects .btn-light {
+  background: #b3b3b3;
+  color: #333; }
 
 * {
   box-sizing: border-box; }
@@ -175,6 +200,15 @@ header {
   z-index: 2;
   width: 100%; }
 
+.btn, #projects .btn-dark, #projects .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, #projects .btn-dark:hover, #projects .btn-light:hover {
+    background: #00f3f3;
+    color: #101010; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
@@ -192,6 +226,14 @@ main {
 
 .text-secondary {
   color: #00f3f3; }
+
+@media screen and (min-width: 1171px) {
+  #projects .projects-grid {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  #projects .projects-grid {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -221,8 +263,12 @@ main {
   #about .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr;
-    justify-items: center; } }
+    justify-items: center; }
+  #projects .projects-grid {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  #projects .projects-grid {
+    grid-template-columns: 1fr; } }

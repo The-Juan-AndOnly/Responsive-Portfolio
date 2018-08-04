@@ -35,6 +35,12 @@
       background: lighten($primary-color, 5);
       padding: 0.5rem;
       border-bottom: $secondary-color 5px solid;
+
+      h6 {
+        font-weight: 300;
+        font-size: 0.75rem;
+        color: lighten($secondary-color, 25);
+      }
     }
   }
 }
